@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+
 *{
     --azul: #4771a3;
     --roxo: #77779d;
@@ -50,4 +52,9 @@ ul{
     object-fit: cover;
     object-position: 50% 50%; /* try 20% 10% */ 
     height: 550px;
+}
+h3{
+    font-family: 'Pacifico', cursive;   
+    color: var(--vermelho);
+    margin-left: 10px;
 }
