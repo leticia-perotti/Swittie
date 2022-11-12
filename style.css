@@ -112,5 +112,13 @@ h4{
 }
 
 .produto-item{
-    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--branco);
+}
+
+.imagem-produto{
+    width: 100px;
 }
