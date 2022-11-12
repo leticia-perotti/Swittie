@@ -4,8 +4,8 @@
     --azul: #4771a3;
     --roxo: #77779d;
     --lilas: #b998b3;
-    --rosa: #e7a8b1;
-    --amarelo: #fdefb0;
+    --rosa: #ffccd4d3;
+    --amarelo: #f6ecbed3;
     --vermelho: #ff0000;
     --branco: #fefefe;
 }
@@ -13,7 +13,7 @@ body{
     
 }
 nav{
-    background-color: var(--rosa);
+    background-color: var(--lilas);
 
     display: flex;
     flex-direction: row;
@@ -55,6 +55,62 @@ ul{
 }
 h3{
     font-family: 'Pacifico', cursive;   
-    color: var(--vermelho);
+    color: var(--branco);
     margin-left: 10px;
+}
+
+.corpo{
+    display: flex;
+    flex-direction: column;
+    background-color: var(--amarelo);
+}
+
+.produtos{
+    background-color: var(--rosa);
+    border-bottom-left-radius: 20px;
+
+    padding-left: 50px;
+    padding-right: 50px;
+
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+.sobre-nos{
+    background-color: var(--amarelo);
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+.quizz{
+    background-color: var(--rosa);
+    border-top-left-radius: 20px;
+}
+
+body::-webkit-scrollbar {
+    width: 6px;               /* width of the entire scrollbar */
+}
+  
+body::-webkit-scrollbar-track {
+background: transparent        /* color of the tracking area */
+}
+
+body::-webkit-scrollbar-thumb {
+background-color: rgb(135, 135, 135);    /* color of the scroll thumb */
+border-radius: 30px;       /* roundness of the scroll thumb */
+}
+
+h4{
+    font-family: 'Pacifico', cursive; 
+    color:var(--vermelho);
+}
+
+.lista-produtos{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+    overflow: auto;
+}
+
+.produto-item{
+    
 }
