@@ -160,3 +160,30 @@ h4{
 .descricao-produto{
     font-family: 'Poppins', sans-serif;
 }
+
+.sobre-nos-texto{
+    padding-left: 10px;
+    padding-right: 10px;
+
+    text-align: justify;
+}
+.titulo-historia{
+    color:var(--vermelho);
+    font-size: 17px;
+
+    padding-left: 10px;
+    padding-right: 10px;
+}
+.historia-texto{
+    padding-left: 10px;
+    padding-right: 10px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+}
+.span-historia{
+    text-align: justify;
+    
+}

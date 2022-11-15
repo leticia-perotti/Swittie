@@ -143,37 +143,40 @@
           <div class="sobre-nos" id="sobre-nos">
             <h4>Sobre nós</h4>
             <p class="sobre-nos-texto">
-              Somos uma confeitaria artesanal, com especialidade em pâtisserie e boulangerie, focada na elaboração de bolos e doces. 
-            </p>
-            <p class="sobre-nos-texto">
-              Aqui, nossos colaboradores sempre estão se aperfeiçoando para poder oferecer um produto de melhor qualidade para nosso clientes. 
-            </p> 
-            <p class="sobre-nos-texto">
-              Servimos nosso primeiro pedaço de bolo em 1995, e desde então atendemos da melhor forma a população das cidades gêmeas. Faça seu pedido whatsapp: 42 99999-9999 ou pelo nosso instagram @_swittie_.
+              Somos uma confeitaria artesanal, com especialidade em pâtisserie e boulangerie, focada na elaboração de bolos e doces. Aqui, nossos colaboradores sempre estão se aperfeiçoando para poder oferecer um produto de melhor qualidade para nosso clientes. Servimos nosso primeiro pedaço de bolo em 1995, e desde então atendemos da melhor forma a população das cidades gêmeas. Faça seu pedido whatsapp: 42 99999-9999 ou pelo nosso instagram @_swittie_.
             </p>
             
 
-            <h5>Um pouco de história...</h5>
-            <p>
+            <h5 class="titulo-historia">Um pouco de história...</h5>
+            <p class="historia-texto">
+              <span class="span-historia">
+                Você sabia que os primeiros registros sobre os doces datam o século I a.C: quando o filósofo romano Cícero cita ter comido um Tubus farinarius, 
+                dulcissimo, edulio ex lacte factus, ou seja, deliciosos tubinhos de massa de farinha, muito doce, recheados com leite, descrição que imediatamente
+                faz pensar a um dos doces mais famosos do mundo, o cannolo siciliano. Naquela época era comum receitas de cremes e pudins, feitos através da 
+                mistura de ovos, leite, mel e pimenta do reino, que eram assados ou cozidos até ficarem densos. Além de que existia o hábito tradicional de caramelizar 
+                amêndoas e avelãs com mel, obtendo algo semelhante ao nosso pé-de-moleque, também o de de rechear frutas secas com nozes para festividades.
                 
-              Os primeiros registros quanto aos doces datam o século I a.C: quando o grande filósofo romano Cícero cita ter comido na Sicília um Tubus farinarius, dulcissimo, edulio ex lacte factus, ou seja, deliciosos tubinhos de massa de farinha, muito doce, recheados com leite, descrição que imediatamente faz pensar a um dos doces mais famosos do mundo, o cannolo siciliano.
-
-              Era comum receitas de cremes e pudins, feitos através da mistura de ovos, leite, mel e pimenta do reino, que eram assados ou cozidos até ficarem densos. Existia o hábito tradicional de caramelizar amêndoas e avelãs com mel, obtendo algo semelhante ao nosso pé-de-moleque, além de rechear frutas secas com nozes para festividades.
-
-              A partir de 1.200 d.C., em meio ao hábito dos banquetes, a sobremesa foi incluída ao cardápio, porém, servida antes da refeição principal (contraditória, não?), pois se acreditava que abria o estômago e a alma dos comensais.
-
-              As receitas derivavam das tradições culinárias romanas e com as Cruzadas passaram a ter influência árabe.
-
-              Finalmente, no século XIV a humanidade dá um salto em direção à confeitaria! Com a expansão marítima e as diversas expedições para o Oriente, ingredientes fundamentais começaram a chegar às cortes: o açúcar de cana, o cacau, a canela, o arroz, a noz-moscada e o cravo-da-índia. 
-
-              Com o descobrimento da América, o açúcar passa a ter preço mais acessível e a prática da confeitaria deslancha! Surge o doce que marcará a história: o bolo genovês (conhecido pão-de-ló), criado pelo confeiteiro italiano Giobatta Cabona.
-
+              </span class="span-historia">                
+                A partir de 1.200 d.C., em meio ao hábito dos banquetes, a sobremesa foi incluída ao cardápio, porém, servida antes da refeição principal 
+                (contraditório, não?), pois se acreditava que abria o estômago e a alma dos comensais. As receitas derivavam das tradições culinárias romanas e 
+                com as Cruzadas passaram a ter influência árabe. Finalmente, no século XIV a humanidade dá um salto em direção à confeitaria, já que com a expansão
+                marítima e as diversas expedições para o Oriente, ingredientes fundamentais começaram a chegar às cortes: o açúcar de cana, o cacau, 
+                a canela, o arroz, a noz-moscada e o cravo-da-índia. Com o descobrimento da América, o açúcar passa a ter preço mais acessível 
+                e a prática da confeitaria deslancha! Surge o doce que marcará a história: o bolo genovês (conhecido pão-de-ló), 
+                criado pelo confeiteiro italiano Giobatta Cabona.
             </p>
 
             </p>
           </div>
           <div class="quizz" id="quizz">
             <h4>Quizz</h4>
+            <div class="prontos-comecar" id="prontos-comecar">
+              Está pronto para começar o quizz???
+
+              <button onclick="iniciar()">
+                Iniciar
+              </button>
+            </div>
           </div>
         </div>
     </main>
@@ -182,3 +185,8 @@
     </footer>
 </body>
 </html>
+<script>
+  function iniciar(){
+    document.getElementById("prontos-comecar").style.display = "none";
+  }
+</script>
