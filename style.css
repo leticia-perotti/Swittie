@@ -80,6 +80,7 @@ h3{
 .produtos{
     background-color: var(--rosa);
     border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
 
     padding-left: 50px;
     padding-right: 50px;
@@ -91,6 +92,12 @@ h3{
     background-color: var(--amarelo);
     border-top-right-radius: 20px;
     border-bottom-right-radius: 20px;
+
+    padding-left: 50px;
+    padding-right: 50px;
+
+    padding-top: 20px;
+    padding-bottom: 20px;
 }
 .quizz{
     background-color: var(--rosa);
