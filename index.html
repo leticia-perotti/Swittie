@@ -177,6 +177,135 @@
                 Iniciar
               </button>
             </div>
+            <div class="pergunta-1" id="pergunta-1">
+              Qual a sua estação preferida do ano?
+
+              <button onclick="pergunta1(2)">
+                Verão
+              </button>
+              <button onclick="pergunta1(3)">
+                Outono
+              </button>
+              <button onclick="pergunta1(1)">
+                Inverno
+              </button>
+              <button onclick="pergunta1(4)">
+                Primavera
+              </button>
+            </div>
+            <div class="pergunta-2" id="pergunta-2">
+              Qual sua bebida favorita?
+
+              <button onclick="pergunta2(1)">
+                Chá              
+              </button>
+              <button onclick="pergunta2(4)">
+                Café
+              </button>
+              <button onclick="pergunta2(2)">
+                Suco
+              </button>
+              <button onclick="pergunta2(3)">
+                Refigerante
+              </button>
+
+            </div>
+            <div class="pergunta-3" id="pergunta-3">
+              Qual dessas cores você prefere?
+
+              <button onclick="pergunta3(1)">
+                Rosa
+              </button>
+              <button onclick="pergunta3(3)">
+                Marrom
+              </button>
+              <button onclick="pergunta3(2)">
+                Verde
+              </button>
+              <button onclick="pergunta3(4)">
+                Amarela
+              </button>
+
+            </div>
+            <div class="pergunta-4" id="prontos-comecar">
+              Qual desses bichos você teria de estimação?
+
+              <button onclick="pergunta4(3)">
+                Calopsita
+              </button>
+              <button onclick="pergunta4(2)">
+                Peixe beta
+              </button>
+              <button onclick="pergunta4(4)">
+                Lagartixa
+              </button>
+              <button onclick="pergunta4(1)">
+                Borboleta
+              </button>
+
+            </div>
+            <div class="pergunta-5" id="prontos-comecar">
+              Qual sabor de sorvete você prefere?
+
+              <button onclick="pergunta5(1)">
+                Flocos
+              </button>
+              <button onclick="pergunta5(3)">
+                Morango
+              </button>
+              <button onclick="pergunta5(4)">
+                Creme
+              </button>
+              <button onclick="pergunta5(2)">
+                Chocolate
+              </button>
+
+            </div>
+            <div class="pergunta-6" id="prontos-comecar">
+              Qual a viagem você preferiria?
+
+              <button onclick="pergunta6()">
+                Praia
+              </button>
+              <button onclick="pergunta6()">
+                Montanhas
+              </button>
+              <button onclick="pergunta6()">
+                Chalé no campo
+              </button>
+              <button onclick="pergunta6()">
+                Cidade grande
+              </button>
+
+            </div>
+            <div class="prontos-comecar" id="prontos-comecar">
+              Está pronto para começar o quizz???
+
+              <button onclick="iniciar()">
+                Iniciar
+              </button>
+            </div>
+            <div class="prontos-comecar" id="prontos-comecar">
+              Está pronto para começar o quizz???
+
+              <button onclick="iniciar()">
+                Iniciar
+              </button>
+            </div>
+            <div class="prontos-comecar" id="prontos-comecar">
+              Está pronto para começar o quizz???
+
+              <button onclick="iniciar()">
+                Iniciar
+              </button>
+            </div>
+            <div class="prontos-comecar" id="prontos-comecar">
+              Está pronto para começar o quizz???
+
+              <button onclick="iniciar()">
+                Iniciar
+              </button>
+            </div>
           </div>
         </div>
     </main>
@@ -186,7 +315,41 @@
 </body>
 </html>
 <script>
+  let pontuacao = 0;
+
   function iniciar(){
     document.getElementById("prontos-comecar").style.display = "none";
+    document.getElementById("pergunta-1").style.display = "block";
   }
+  function pergunta1(valor){
+    document.getElementById("pergunta-1").style.display = "none";
+    document.getElementById("pergunta-2").style.display = "block";
+
+    pontuacao += valor;
+  }
+  function pergunta2(valor){
+    document.getElementById("pergunta-2").style.display = "none";
+    document.getElementById("pergunta-3").style.display = "block";
+
+    pontuacao += valor;
+  }
+  function pergunta3(valor){
+    document.getElementById("pergunta-3").style.display = "none";
+    document.getElementById("pergunta-4").style.display = "block";
+
+    pontuacao += valor;
+  }
+  function pergunta4(valor){
+    document.getElementById("pergunta-4").style.display = "none";
+    document.getElementById("pergunta-5").style.display = "block";
+
+    pontuacao += valor;
+  }
+  function pergunta5(valor){
+    document.getElementById("pergunta-5").style.display = "none";
+    document.getElementById("pergunta-6").style.display = "block";
+
+    pontuacao += valor;
+  }
+
 </script>
