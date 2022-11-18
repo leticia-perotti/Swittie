@@ -227,7 +227,7 @@
               </button>
 
             </div>
-            <div class="pergunta-4" id="prontos-comecar">
+            <div class="pergunta-4" id="pergunta-4">
               Qual desses bichos você teria de estimação?
 
               <button onclick="pergunta4(3)">
@@ -244,7 +244,7 @@
               </button>
 
             </div>
-            <div class="pergunta-5" id="prontos-comecar">
+            <div class="pergunta-5" id="pergunta-5">
               Qual sabor de sorvete você prefere?
 
               <button onclick="pergunta5(1)">
@@ -261,50 +261,92 @@
               </button>
 
             </div>
-            <div class="pergunta-6" id="prontos-comecar">
+            <div class="pergunta-6" id="pergunta-6">
               Qual a viagem você preferiria?
 
-              <button onclick="pergunta6()">
+              <button onclick="pergunta6(2)">
                 Praia
               </button>
-              <button onclick="pergunta6()">
+              <button onclick="pergunta6(3)">
                 Montanhas
               </button>
-              <button onclick="pergunta6()">
+              <button onclick="pergunta6(4)">
                 Chalé no campo
               </button>
-              <button onclick="pergunta6()">
-                Cidade grande
+              <button onclick="pergunta6(1)">
+                Metrópole
               </button>
 
             </div>
-            <div class="prontos-comecar" id="prontos-comecar">
-              Está pronto para começar o quizz???
+            <div class="pergunta-7" id="pergunta-7">
+              Qual dessas músicas do The Weeknd?
 
-              <button onclick="iniciar()">
-                Iniciar
+              <button onclick="pergunta7(2)">
+                Sacrifice
+              </button>
+              <button onclick="pergunta7(3)">
+                Out of Time
+              </button>
+              <button onclick="pergunta7(4)">
+                Gasoline
+              </button>
+              <button onclick="pergunta7(1)">
+                Blinding Lights
+              </button>
+
+            </div>
+            <div class="pergunta-8" id="pergunta-8">
+              Qual sabor de pizza desses você prefere?
+
+              <button onclick="pergunta8(2)">
+                Calabresa
+              </button>
+              <button onclick="pergunta8(1)">
+                4 queijos
+              </button>
+              <button onclick="pergunta8(4)">
+                Margherita
+              </button>
+              <button onclick="pergunta8(3)">
+                Estrogonofe
               </button>
             </div>
-            <div class="prontos-comecar" id="prontos-comecar">
-              Está pronto para começar o quizz???
+            <div class="pergunta-9" id="pergunta-9">
+              Qual dessas flores prefere?
 
-              <button onclick="iniciar()">
-                Iniciar
+              <button onclick="pergunta9(2)">
+                Orquídea
               </button>
+              <button onclick="pergunta9(3)">
+                Violeta
+              </button>
+              <button onclick="pergunta9(4)">
+                Margarida
+              </button>
+              <button onclick="pergunta9(1)">
+                Rosa
+              </button>
+
             </div>
-            <div class="prontos-comecar" id="prontos-comecar">
-              Está pronto para começar o quizz???
+            <div class="pergunta-10" id="pergunta-10">
+              Qual desses números você prefere?
 
-              <button onclick="iniciar()">
-                Iniciar
+              <button onclick="pergunta10()">
+                96
               </button>
+              <button onclick="pergunta10()">
+                85
+              </button>
+              <button onclick="pergunta10()">
+                147
+              </button>
+              <button onclick="pergunta10()">
+                120
+              </button>
+
             </div>
-            <div class="prontos-comecar" id="prontos-comecar">
-              Está pronto para começar o quizz???
-
-              <button onclick="iniciar()">
-                Iniciar
-              </button>
+            <div class="resposta-quizz" id="resposta-quizz">
+              Parabéns, o doce que mais combina com você é...
             </div>
           </div>
         </div>
@@ -351,5 +393,34 @@
 
     pontuacao += valor;
   }
+  function pergunta6(valor){
+    document.getElementById("pergunta-6").style.display = "none";
+    document.getElementById("pergunta-7").style.display = "block";
 
+    pontuacao += valor;
+  }
+  function pergunta7(valor){
+    document.getElementById("pergunta-7").style.display = "none";
+    document.getElementById("pergunta-8").style.display = "block";
+
+    pontuacao += valor;
+  }
+  function pergunta8(valor){
+    document.getElementById("pergunta-8").style.display = "none";
+    document.getElementById("pergunta-9").style.display = "block";
+
+    pontuacao += valor;
+  }
+  function pergunta9(valor){
+    document.getElementById("pergunta-9").style.display = "none";
+    document.getElementById("pergunta-10").style.display = "block";
+
+    pontuacao += valor;
+  }
+  function pergunta10(valor){
+    document.getElementById("pergunta-10").style.display = "none";
+    document.getElementById("reposta-quizz").style.display = "block";
+
+    pontuacao += valor;
+  }
 </script>
