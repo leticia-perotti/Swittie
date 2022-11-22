@@ -552,35 +552,35 @@
     if(pontuacao<=13){
       document.getElementById("imagemdoce").insertAdjacentHTML("afterend", "<img src='/imagens/produto-5.jpg' alt='imagens-folhado' class='imagem-produto'>");
       document.getElementById("descricaodoce").insertAdjacentHTML("afterend", "<span>Você seria um crocante folhado de frutas vermelhas, com creme belga e deliciosas frutas frescas. Um sabor leve e clássico!</span>");
-    }else if (13>pontuacao && pontuacao>=16){
+    }else if(13<pontuacao && pontuacao<=16){
       document.getElementById("imagemdoce").insertAdjacentHTML("afterend","<img src='/imagens/produto-1.jpg' alt='imagens-folhado' class='imagem-produto'>")
       document.getElementById("descricaodoce").insertAdjacentHTML("afterend", "<span>Você seria um delicioso macaron, o doce da raina que caiu nas mão do povo. Feito com a nobre farinha de amêndoas, chique em!</span>");
-    }else if(16>pontuacao && pontuacao>=20){
+    }else if(16<pontuacao && pontuacao<=20){
       document.getElementById("imagemdoce").insertAdjacentHTML("afterend","<img src='/imagens/produto-1.png' alt='imagens-folhado' class='imagem-produto'>")
-    }else if (20>pontuacao && pontuacao>=24){
+    }else if(20<pontuacao && pontuacao<=24){
       document.getElementById("imagemdoce").insertAdjacentHTML("afterend","<img src='/imagens/produto-3.jpg' alt='imagens-folhado' class='imagem-produto'>")
       document.getElementById("descricaodoce").insertAdjacentHTML("afterend", "<span>Você seria um delicioso ninho de pistache, um doce de origem mediterrânea e suuuper delicado, gostoso né!</span>");
-    }else if (24>pontuacao && pontuacao>=27){
+    }else if(24<pontuacao && pontuacao<=27){
       document.getElementById("imagemdoce").insertAdjacentHTML("afterend", "<img src='/imagens/produto-4.png' alt='imagens-folhado' class='imagem-produto'>")
       document.getElementById("descricaodoce").insertAdjacentHTML("afterend", "<span>Você seria uma bela sobremesa clássica da confeitaria francesa, a Saint Honoré é um torta feita com massa semi-folhada, creme, profiteroles e caramelo. Perfeita!</span>");
-    }else if (27>pontuacao && pontuacao>=30){
+    }else if(27<pontuacao && pontuacao<=30){
       document.getElementById("imagemdoce").insertAdjacentHTML("afterend", "<img src='/imagens/produto-6.jpg alt='imagens-folhado' class='imagem-produto'>")
       document.getElementById("descricaodoce").insertAdjacentHTML("afterend", "<span>Você seria um abela éclair, uma massa choux leve, com o recheio de sua preferencia, além de frutas fresca. Chique, não?</span>");
-    }else if (30>pontuacao && pontuacao>=32){
+    }else if(30<pontuacao && pontuacao<=32){
       document.getElementById("imagemdoce").insertAdjacentHTML("afterend", "<img src='/imagens/produto-7.jpeg' alt='imagens-folhado' class='imagem-produto'>")
       document.getElementById("descricaodoce").insertAdjacentHTML("afterend", "<span>Você seria uma deliciosa pavlova, com base de merengue e deliciosas frutas frescas por cima, gostoso né!</span>");
-    }else if (32>pontuacao && pontuacao>=34){
+    }else if(32<pontuacao && pontuacao<=34){
       document.getElementById("imagemdoce").insertAdjacentHTML("afterend", "<img src='/imagens/produto-8.jpg' alt='imagens-folhado' class='imagem-produto'>")
       document.getElementById("descricaodoce").insertAdjacentHTML("afterend", "<span>Você seria um delicioso bolo red velvet, de tom bordeaux que esconde sabor de chocolate, e o creme branco é o perfeito oposto complementar: baunilha. A combinação ideal!</span>");
-    }else if (34>pontuacao && pontuacao>=36){
+    }else if(34<pontuacao && pontuacao<=36){
       document.getElementById("imagemdoce").insertAdjacentHTML("afterend", "<img src='/imagens/produto-9.jpg' alt='imagens-folhado' class='imagem-produto'>")
       document.getElementById("descricaodoce").insertAdjacentHTML("afterend", "<span>Você seria o comum e incrível bolo floresta negra, com os sabores de cereja e chocolate. Aquele que nuuunca enjoa! </span>");
-    }else if (36>pontuacao && pontuacao>=38){
+    }else if(36<pontuacao && pontuacao<=38){
       document.getElementById("imagemdoce").insertAdjacentHTML("afterend", "<img src='/imagens/produto-10.jpg' alt='imagens-folhado' class='imagem-produto'>")
-      document.getElementById("descricaodoce").insertAdjacentHTML("afterend", "<span>Você seria um delicioso ninho de pistache, um doce de origem mediterrânea e suuuper delicado, gostoso né!</span>");
-    }else if (pontuacao>38){
+      document.getElementById("descricaodoce").insertAdjacentHTML("afterend",  "<span>Você seria a clássica torta de morangos, aquele que é simplesmente impossível não amar. A clássica perfeita!</span>");
+    }else if(pontuacao>38){
       document.getElementById("imagemdoce").insertAdjacentHTML("afterend", "<img src='/imagens/produto-11.jpeg' alt='imagens-folhado' class='imagem-produto'>")
-      document.getElementById("descricaodoce").insertAdjacentHTML("afterend", "<span>Você seria a clássica torta de morangos, aquele que é simplesmente impossível não amar. A clássica perfeita!</span>");
+      document.getElementById("descricaodoce").insertAdjacentHTML("afterend", "<span>Você seria receita de nossa autoria, bolo 3 chocolates, um doce totalmente inovador e diferente. Muuuiro ousado em!</span>");
     }else{
       document.getElementById("imagemdoce").insertAdjacentHTML("afterend", "<img src='/imagens/produto-12.jpg' alt='imagens-folhado' class='imagem-produto'>")
       document.getElementById("descricaodoce").insertAdjacentHTML("afterend", "<span>Você seria a famosa receita americana de Baked alaska, um bolo com sorvete e merenge, um exemplo contemporâneo e incrível!</span>");
@@ -589,5 +589,8 @@
   function reinicar(){
     document.getElementById("resposta-quizz").style.display = "none";
     document.getElementById("prontos-comecar").style.display = "block";
+    document.getElementById("imagemdoce").innerHTML = "";
+    document.getElementById("descricaodoce").innerHTML = "";
+    pontuacao = 0;
   }
 </script>
