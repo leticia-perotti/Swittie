@@ -227,9 +227,42 @@ h4{
 .resposta-quizz{
     display: none;
 }
-.prontos-comecar{
-    display: flex;
+.paginas{
+    display: flex !important;
     flex-direction: column;
     align-items: center;
     justify-content: center;
+
+    gap: 20px;
+    padding: 15px;
+}
+footer{
+    background-color: var(--lilas);
+    color: var(--branco);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 5px;
+    padding: 10px
+}
+.botao-iniciar{
+    background-color: var(--vermelho);
+    color: var(--branco);
+    border:none;
+    border-radius: 30px;
+    width: 25vh;
+    height: 30px;
+}
+.botoes{
+    background-color: var(--vermelho);
+    color: var(--branco);
+    border:none;
+    border-radius: 30px;
+    width: 100%;
+    height: 30px;
+    margin: 5px;
+}
+.ajuste-width-75{
+    width: 75%;
 }
