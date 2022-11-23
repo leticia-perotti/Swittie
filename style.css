@@ -225,7 +225,7 @@ h4{
     display: none;
 }
 .resposta-quizz{
-    display: none;
+    display: block;
 }
 .paginas{
     display: flex !important;
@@ -265,4 +265,29 @@ footer{
 }
 .ajuste-width-75{
     width: 75%;
+}
+#descricaoresposta{
+    font-family: 'Pacifico', cursive; 
+    font-size: 20px;
+    color: var(--vermelho);
+}
+.alinhamento-end{
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+    justify-content: flex-end;
+    width: 100%;
+}
+.alinhamento-resposta-quizz{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap:10px;
+    width: 100%;
+}
+.alinha{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content:center;
 }
