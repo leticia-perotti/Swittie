@@ -225,7 +225,7 @@ h4{
     display: none;
 }
 .resposta-quizz{
-    display: block;
+    display: none;
 }
 .paginas{
     display: flex !important;
